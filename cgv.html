@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditions Générales de Vente — Wevio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --border: #1e1e2e;
+      --accent: #7c3aed;
+      --accent-light: #a78bfa;
+      --text: #e2e2f0;
+      --text-muted: #6b6b8a;
+      --text-dim: #9898b8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-family: 'DM Mono', monospace; font-size: 1.1rem; color: var(--accent-light); letter-spacing: -0.02em; }
+    .back-link { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    .back-link:hover { color: var(--accent-light); }
+    .hero {
+      padding: 5rem 2rem 3rem;
+      max-width: 800px; margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      background: rgba(124,58,237,0.1);
+      border: 1px solid rgba(124,58,237,0.25);
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero p { color: var(--text-muted); font-size: 0.95rem; }
+    /* pricing highlight */
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+    }
+    .price-card .label { font-size: 0.75rem; color: var(--text-muted); font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .price-card .amount { font-size: 2rem; font-weight: 600; color: #fff; letter-spacing: -0.03em; }
+    .price-card .amount span { font-size: 0.9rem; color: var(--text-muted); font-weight: 400; }
+    .price-card .desc { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
+    .content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+    section { margin-bottom: 3rem; }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent-light);
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 0.9rem; font-weight: 600; color: var(--text); margin: 1.25rem 0 0.5rem; }
+    p { color: var(--text-dim); margin-bottom: 0.75rem; }
+    ul { color: var(--text-dim); padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    ul li { margin-bottom: 0.4rem; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .info-box {
+      background: rgba(124,58,237,0.06);
+      border: 1px solid rgba(124,58,237,0.2);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .info-box p { color: var(--text-dim); margin: 0; font-size: 0.875rem; }
+    .update { font-size: 0.8rem; color: var(--text-muted); font-family: 'DM Mono', monospace; margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    @media (max-width: 600px) { .pricing-cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="logo">Wevio</span>
+    <a href="/" class="back-link">← Retour à l'accueil</a>
+  </nav>
+
+  <div class="hero">
+    <div class="tag">Légal</div>
+    <h1>Conditions générales de vente</h1>
+    <p>Les présentes CGV régissent l'ensemble des ventes de logiciels et services réalisées par Wevio à destination de clients professionnels.</p>
+  </div>
+
+  <div class="content">
+
+    <section>
+      <h2>Préambule</h2>
+      <p>Toute commande implique l'acceptation pleine et entière des présentes CGV. Ces CGV prévalent sur tout document émanant du Client.</p>
+      <p>Wevio est une marque commerciale de Fidyk Hugo, auto-entrepreneur, SIREN 942 782 301, 60 rue François 1er – 75008 Paris — <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a>.</p>
+    </section>
+
+    <section>
+      <h2>Article 1 — Objet</h2>
+      <p>Wevio commercialise un logiciel de gestion (CRM) destiné aux artisans et PME du secteur du bâtiment et des travaux publics. Ce logiciel est fourni sous forme d'instance déployée indépendamment pour chaque Client, personnalisée sous la marque ou le nom du Client.</p>
+    </section>
+
+    <section>
+      <h2>Article 2 — Prix et paiement</h2>
+      <div class="pricing-cards">
+        <div class="price-card">
+          <div class="label">Licence initiale</div>
+          <div class="amount">1 000 <span>€ HT</span></div>
+          <div class="desc">Achat unique — déploiement + configuration</div>
+        </div>
+        <div class="price-card">
+          <div class="label">Renouvellement annuel</div>
+          <div class="amount">99 <span>€ HT/an</span></div>
+          <div class="desc">À partir de la 2e année — maintenance + mises à jour</div>
+        </div>
+      </div>
+      <h3>Modalités de paiement</h3>
+      <p>Le paiement s'effectue par virement bancaire ou tout autre moyen convenu. Il est exigible à réception de la facture. Tout retard entraîne des pénalités au taux légal en vigueur, ainsi qu'une indemnité forfaitaire de 40 € pour frais de recouvrement (art. L.441-10 du Code de commerce).</p>
+      <h3>Ce qui est inclus</h3>
+      <ul>
+        <li>Déploiement d'une instance personnalisée</li>
+        <li>Configuration initiale et mise en service</li>
+        <li>Accès illimité sans abonnement mensuel</li>
+        <li>Support technique par email (inclus dans le renouvellement annuel)</li>
+        <li>Mises à jour du logiciel (incluses dans le renouvellement annuel)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Article 3 — Livraison</h2>
+      <p>Le logiciel est livré sous forme d'application web accessible en ligne, déployée sur les serveurs de Vercel. Le délai de mise en service est de <strong>5 jours ouvrés</strong> à compter de la réception du paiement et des informations nécessaires transmises par le Client.</p>
+    </section>
+
+    <section>
+      <h2>Article 4 — Licence d'utilisation</h2>
+      <p>Wevio accorde au Client une licence non exclusive, non cessible et non transférable d'utilisation du logiciel, strictement limitée à l'usage interne du Client.</p>
+      <div class="info-box">
+        <p>Toute reproduction, revente, sous-licence ou mise à disposition à des tiers est formellement interdite.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Article 5 — Propriété intellectuelle</h2>
+      <p>Le logiciel, son code source, son architecture, ses interfaces et toute documentation associée restent la propriété exclusive de Fidyk Hugo / Wevio. Le Client n'acquiert aucun droit de propriété sur le logiciel, uniquement un droit d'usage dans les conditions définies à l'article 4.</p>
+    </section>
+
+    <section>
+      <h2>Article 6 — Données personnelles</h2>
+      <p>Le Client est seul responsable des données à caractère personnel qu'il traite via le logiciel. Wevio agit en qualité de sous-traitant au sens du RGPD. Les données sont hébergées sur l'infrastructure Supabase (EU) et Vercel.</p>
+      <p>Wevio s'engage à ne pas accéder aux données du Client sauf dans le cadre d'interventions techniques expressément demandées.</p>
+    </section>
+
+    <section>
+      <h2>Article 7 — Garanties et responsabilité</h2>
+      <p>Wevio s'engage à fournir un logiciel fonctionnel et conforme à la description commerciale. En revanche, Wevio ne saurait être tenu responsable de :</p>
+      <ul>
+        <li>Interruptions de service dues à des tiers (hébergeur, fournisseur internet)</li>
+        <li>Pertes de données causées par une mauvaise utilisation du Client</li>
+        <li>Dommages indirects, pertes d'exploitation ou manque à gagner</li>
+      </ul>
+      <p>La responsabilité de Wevio est en tout état de cause limitée au montant facturé au titre de la prestation concernée.</p>
+    </section>
+
+    <section>
+      <h2>Article 8 — Résiliation</h2>
+      <p>En cas de non-paiement du renouvellement annuel après mise en demeure restée infructueuse sous 15 jours, Wevio se réserve le droit de suspendre l'accès au logiciel.</p>
+      <p>Le Client conserve l'accès à ses données pendant <strong>30 jours</strong> à compter de la suspension pour en effectuer l'export.</p>
+    </section>
+
+    <section>
+      <h2>Article 9 — Droit applicable</h2>
+      <p>Les présentes CGV sont soumises au droit français. En cas de litige, les parties s'engagent à rechercher une solution amiable avant tout recours judiciaire. À défaut, le tribunal compétent sera celui du ressort du domicile professionnel de Fidyk Hugo (Paris).</p>
+    </section>
+
+    <p class="update">Version en vigueur au 19 avril 2026 — Fait à Paris, France</p>
+  </div>
+</body>
+</html>

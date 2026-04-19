@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/mentions-legales"
+  to = "/mentions-legales.html"
+  status = 200
+
+[[redirects]]
+  from = "/politique-confidentialite"
+  to = "/politique-confidentialite.html"
+  status = 200
+
+[[redirects]]
+  from = "/cgv"
+  to = "/cgv.html"
+  status = 200

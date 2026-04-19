@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions Légales — Wevio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --border: #1e1e2e;
+      --accent: #7c3aed;
+      --accent-light: #a78bfa;
+      --text: #e2e2f0;
+      --text-muted: #6b6b8a;
+      --text-dim: #9898b8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    /* nav */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-family: 'DM Mono', monospace; font-size: 1.1rem; color: var(--accent-light); letter-spacing: -0.02em; }
+    .back-link { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s; }
+    .back-link:hover { color: var(--accent-light); }
+    /* hero */
+    .hero {
+      padding: 5rem 2rem 3rem;
+      max-width: 800px; margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      background: rgba(124,58,237,0.1);
+      border: 1px solid rgba(124,58,237,0.25);
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero p { color: var(--text-muted); font-size: 0.95rem; }
+    /* content */
+    .content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+    section { margin-bottom: 3rem; }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent-light);
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    p { color: var(--text-dim); margin-bottom: 0.75rem; }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 0.6rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    .info-grid dt { color: var(--text-muted); font-size: 0.85rem; font-weight: 500; }
+    .info-grid dd { color: var(--text); font-size: 0.9rem; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .update { font-size: 0.8rem; color: var(--text-muted); font-family: 'DM Mono', monospace; margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="logo">Wevio</span>
+    <a href="/" class="back-link">← Retour à l'accueil</a>
+  </nav>
+
+  <div class="hero">
+    <div class="tag">Légal</div>
+    <h1>Mentions légales</h1>
+    <p>Informations légales relatives à l'éditeur et à l'hébergement du site et de l'application Wevio.</p>
+  </div>
+
+  <div class="content">
+
+    <section>
+      <h2>1. Éditeur du site</h2>
+      <dl class="info-grid">
+        <dt>Nom</dt><dd>Fidyk Hugo</dd>
+        <dt>Statut juridique</dt><dd>Auto-entrepreneur</dd>
+        <dt>Nom commercial</dt><dd>Wevio</dd>
+        <dt>SIREN</dt><dd>942 782 301</dd>
+        <dt>Adresse</dt><dd>60 rue François 1er – 75008 Paris</dd>
+        <dt>Email</dt><dd><a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a></dd>
+        <dt>Téléphone</dt><dd>06 52 57 07 60</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>2. Hébergement</h2>
+      <p>L'application Wevio est hébergée par <strong>Vercel Inc.</strong> — 340 Pine Street, Suite 700, San Francisco, CA 94104, USA.</p>
+      <p>Les bases de données sont hébergées par <strong>Supabase</strong> sur infrastructure AWS eu-west-1 (Europe).</p>
+    </section>
+
+    <section>
+      <h2>3. Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus présents sur le site et dans l'application Wevio (code source, design, textes, images, logos) sont protégés par le droit de la propriété intellectuelle et appartiennent exclusivement à Fidyk Hugo.</p>
+      <p>Toute reproduction, représentation ou diffusion sans autorisation écrite préalable est interdite.</p>
+    </section>
+
+    <section>
+      <h2>4. Données personnelles</h2>
+      <p>Conformément au RGPD (UE 2016/679) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données personnelles.</p>
+      <p>Pour exercer ces droits : <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a></p>
+    </section>
+
+    <section>
+      <h2>5. Cookies</h2>
+      <p>L'application Wevio utilise uniquement des cookies techniques strictement nécessaires au fonctionnement du service (authentification, session). Aucun cookie publicitaire ou de traçage tiers n'est utilisé.</p>
+    </section>
+
+    <section>
+      <h2>6. Responsabilité</h2>
+      <p>Fidyk Hugo s'efforce d'assurer la disponibilité et l'exactitude des informations publiées. Toutefois, sa responsabilité ne saurait être engagée en cas d'interruption de service, d'inexactitudes ou d'omissions dans les contenus.</p>
+    </section>
+
+    <section>
+      <h2>7. Droit applicable</h2>
+      <p>Le présent site est soumis au droit français. En cas de litige, les tribunaux français sont seuls compétents.</p>
+    </section>
+
+    <p class="update">Dernière mise à jour : 19 avril 2026 — Paris, France</p>
+  </div>
+</body>
+</html>

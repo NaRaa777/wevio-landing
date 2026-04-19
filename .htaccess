@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^mentions-legales/?$ mentions-legales.html [L]
+  RewriteRule ^politique-confidentialite/?$ politique-confidentialite.html [L]
+  RewriteRule ^cgv/?$ cgv.html [L]
+</IfModule>
