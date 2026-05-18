@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité — Wevio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --border: #1e1e2e;
+      --accent: #7c3aed;
+      --accent-light: #a78bfa;
+      --text: #e2e2f0;
+      --text-muted: #6b6b8a;
+      --text-dim: #9898b8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo { font-family: 'DM Mono', monospace; font-size: 1.1rem; color: var(--accent-light); letter-spacing: -0.02em; }
+    .back-link { font-size: 0.85rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s; }
+    .back-link:hover { color: var(--accent-light); }
+    .hero {
+      padding: 5rem 2rem 3rem;
+      max-width: 800px; margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      background: rgba(124,58,237,0.1);
+      border: 1px solid rgba(124,58,237,0.25);
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero p { color: var(--text-muted); font-size: 0.95rem; }
+    .content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+    section { margin-bottom: 3rem; }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent-light);
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    p { color: var(--text-dim); margin-bottom: 0.75rem; }
+    ul { color: var(--text-dim); padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    ul li { margin-bottom: 0.4rem; }
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 0.875rem;
+    }
+    th {
+      background: rgba(124,58,237,0.12);
+      color: var(--accent-light);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.85rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 0.85rem 1rem;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    .rights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .right-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+    }
+    .right-item strong { display: block; color: var(--text); font-size: 0.875rem; margin-bottom: 0.25rem; }
+    .right-item span { color: var(--text-muted); font-size: 0.8rem; }
+    .update { font-size: 0.8rem; color: var(--text-muted); font-family: 'DM Mono', monospace; margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    @media (max-width: 600px) { .rights-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="logo">Wevio</span>
+    <a href="/" class="back-link">← Retour à l'accueil</a>
+  </nav>
+
+  <div class="hero">
+    <div class="tag">Légal</div>
+    <h1>Politique de confidentialité</h1>
+    <p>Comment Wevio collecte, utilise et protège vos données personnelles, conformément au RGPD.</p>
+  </div>
+
+  <div class="content">
+
+    <section>
+      <h2>1. Responsable de traitement</h2>
+      <p>Fidyk Hugo, auto-entrepreneur opérant sous la marque <strong>Wevio</strong>, SIREN 942 782 301, 60 rue François 1er – 75008 Paris, est responsable de traitement au sens du RGPD pour les données relatives à son activité commerciale.</p>
+      <p>Pour les données saisies par chaque client dans son instance Wevio, le client est responsable de traitement et Wevio agit en qualité de sous-traitant.</p>
+    </section>
+
+    <section>
+      <h2>2. Données collectées et finalités</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Données</th>
+            <th>Finalité</th>
+            <th>Durée de conservation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nom, email, téléphone (prospects)</td>
+            <td>Prospection commerciale</td>
+            <td>3 ans après dernier contact</td>
+          </tr>
+          <tr>
+            <td>Données de facturation</td>
+            <td>Obligations comptables</td>
+            <td>10 ans (obligation légale)</td>
+          </tr>
+          <tr>
+            <td>Logs de connexion</td>
+            <td>Sécurité et débogage</td>
+            <td>12 mois</td>
+          </tr>
+          <tr>
+            <td>Données saisies dans l'app</td>
+            <td>Fonctionnement du service</td>
+            <td>Durée du contrat + 30 jours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. Base légale</h2>
+      <ul>
+        <li><strong>Exécution du contrat</strong> — pour les données nécessaires à la fourniture du service</li>
+        <li><strong>Intérêt légitime</strong> — pour la prospection B2B</li>
+        <li><strong>Obligation légale</strong> — pour la conservation des données comptables</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Sous-traitants techniques</h2>
+      <p>Les données sont accessibles uniquement à Fidyk Hugo et aux sous-traitants suivants :</p>
+      <ul>
+        <li><strong>Supabase Inc.</strong> — hébergement base de données (serveurs EU)</li>
+        <li><strong>Vercel Inc.</strong> — hébergement de l'application</li>
+        <li><strong>Resend</strong> — envoi d'emails transactionnels</li>
+      </ul>
+      <p>Aucune donnée n'est cédée, vendue ou partagée avec des tiers à des fins commerciales.</p>
+    </section>
+
+    <section>
+      <h2>5. Vos droits</h2>
+      <div class="rights-grid">
+        <div class="right-item"><strong>Accès</strong><span>Obtenir une copie de vos données</span></div>
+        <div class="right-item"><strong>Rectification</strong><span>Corriger des données inexactes</span></div>
+        <div class="right-item"><strong>Effacement</strong><span>Demander la suppression de vos données</span></div>
+        <div class="right-item"><strong>Portabilité</strong><span>Recevoir vos données dans un format structuré</span></div>
+        <div class="right-item"><strong>Limitation</strong><span>Restreindre le traitement de vos données</span></div>
+        <div class="right-item"><strong>Opposition</strong><span>Vous opposer à certains traitements</span></div>
+      </div>
+      <p style="margin-top:1rem;">Pour exercer vos droits : <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a> — réponse sous 30 jours. En cas de réclamation : <a href="https://www.cnil.fr" target="_blank">cnil.fr</a>.</p>
+    </section>
+
+    <section>
+      <h2>6. Sécurité</h2>
+      <p>Wevio met en œuvre des mesures techniques et organisationnelles adaptées : authentification sécurisée (Supabase Auth), chiffrement en transit (HTTPS/TLS), isolation des instances par client, accès restreint aux données de production.</p>
+    </section>
+
+    <section>
+      <h2>7. Transferts hors UE</h2>
+      <p>Vercel Inc. est une société américaine. Les transferts s'effectuent dans le cadre du Data Privacy Framework UE-USA ou via des clauses contractuelles types approuvées par la Commission européenne. Supabase utilise des serveurs localisés en Europe (région eu-west).</p>
+    </section>
+
+    <p class="update">Dernière mise à jour : 19 avril 2026 — Paris, France</p>
+  </div>
+</body>
+</html>
