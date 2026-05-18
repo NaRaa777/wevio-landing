@@ -1,5 +1,16 @@
 export type ProjectCategory = "all" | "web" | "app" | "ecom" | "saas";
 
+export interface ProjectScreenshot {
+  src: string;
+  alt: string;
+  caption: string;
+}
+
+export interface ProjectMetric {
+  value: string;
+  label: string;
+}
+
 export interface Project {
   id: number;
   cat: Exclude<ProjectCategory, "all">;
@@ -8,7 +19,8 @@ export interface Project {
   client: string;
   preview: string;
   desc: string;
-  metrics: string[];
+  gallery: ProjectScreenshot[];
+  metrics: ProjectMetric[];
   stack: string[];
 }
 

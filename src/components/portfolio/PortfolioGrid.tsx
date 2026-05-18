@@ -61,7 +61,7 @@ export function PortfolioGrid() {
 
           <div
             key={animKey}
-            className={`portfolio-grid mt-12 grid grid-cols-1 gap-6 transition-opacity sm:grid-cols-2 lg:grid-cols-3 ${
+            className={`portfolio-grid mt-12 grid grid-cols-1 gap-8 transition-opacity md:grid-cols-2 lg:grid-cols-3 ${
               visible ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -76,3 +76,6 @@ export function PortfolioGrid() {
     </>
   );
 }
+
+
+

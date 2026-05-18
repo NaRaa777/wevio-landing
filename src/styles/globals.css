@@ -181,6 +181,12 @@ a.btn,
 }
 
 /* Modal */
-.modal-open {
+html.modal-open,
+body.modal-open {
   overflow: hidden;
+  height: 100%;
+}
+
+body.modal-open .custom-cursor {
+  display: none !important;
 }
