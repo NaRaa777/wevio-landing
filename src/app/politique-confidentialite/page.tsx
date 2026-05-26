@@ -143,7 +143,7 @@ export default function PolitiqueConfidentialitePage() {
         </div>
         <p className="mt-4">
           Pour exercer vos droits :{" "}
-          <a href="mailto:contact@wevio.fr">contact@wevio.fr</a> — réponse sous 30 jours.
+          <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a> — réponse sous 30 jours.
           Réclamation auprès de la CNIL :{" "}
           <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">
             cnil.fr

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import { SectionTag } from "@/components/ui/SectionTag";
-import type { TeamMember } from "@/types";
+import { FounderSection } from "@/components/about/FounderSection";
 
 export const metadata: Metadata = {
   title: "À propos",
   description:
-    "Découvrez Wevio, agence digitale parisienne — notre équipe, nos valeurs et notre approche.",
+    "Découvrez Wevio, agence digitale parisienne — nos valeurs, notre approche et le fondateur.",
 };
 
 const features = [
-  "Équipe senior full-stack basée à Paris",
+  "Développement full-stack basé à Paris",
   "Méthode agile avec livraisons hebdomadaires",
   "Support et maintenance sur 12 mois inclus",
 ];
@@ -28,13 +28,6 @@ const values = [
     title: "Résultats",
     desc: "Nos projets sont mesurés par des KPIs concrets : conversion, productivité, adoption.",
   },
-];
-
-const team: TeamMember[] = [
-  { id: 1, name: "Alexandre Dupont", role: "CEO & Lead Dev", initials: "AD", gradient: "from-blue to-cyan" },
-  { id: 2, name: "Marie Laurent", role: "Design Lead", initials: "ML", gradient: "from-violet to-blue" },
-  { id: 3, name: "Julien Moreau", role: "Full-Stack Dev", initials: "JM", gradient: "from-cyan to-blue" },
-  { id: 4, name: "Emma Rousseau", role: "Product Manager", initials: "ER", gradient: "from-blue to-violet" },
 ];
 
 export default function AboutPage() {
@@ -88,28 +81,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="mt-28">
-          <SectionTag label="Équipe" />
-          <h2 className="mt-3 font-syne text-[clamp(2.1rem,3.5vw,3rem)] font-bold text-white">
-            Les visages derrière Wevio
-          </h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {team.map((m) => (
-              <div
-                key={m.id}
-                className="rounded-card border border-[var(--border)] bg-white/[0.02] p-6 text-center"
-              >
-                <div
-                  className={`mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br ${m.gradient} font-syne text-2xl font-bold text-white`}
-                >
-                  {m.initials}
-                </div>
-                <h3 className="mt-4 font-medium text-white">{m.name}</h3>
-                <p className="text-sm text-dim">{m.role}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <FounderSection />
       </div>
     </div>
   );

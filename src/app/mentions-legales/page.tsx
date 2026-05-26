@@ -29,7 +29,7 @@ export default function MentionsLegalesPage() {
             {
               label: "Email",
               value: (
-                <a href="mailto:contact@wevio.fr">contact@wevio.fr</a>
+                <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a>
               ),
             },
             { label: "Téléphone", value: "06 52 57 07 60" },
@@ -82,7 +82,7 @@ export default function MentionsLegalesPage() {
         </p>
         <p>
           Pour exercer ces droits :{" "}
-          <a href="mailto:contact@wevio.fr">contact@wevio.fr</a>
+          <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a>
         </p>
         <p>
           Pour plus de détails, consultez notre{" "}

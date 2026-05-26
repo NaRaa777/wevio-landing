@@ -48,10 +48,10 @@ export function Footer() {
             </p>
             <p className="text-sm text-muted">Paris, France</p>
             <a
-              href="mailto:contact@wevio.fr"
+              href="mailto:hugodev@wevio.fr"
               className="mt-1 block text-sm text-bluel hover:text-white"
             >
-              contact@wevio.fr
+              hugodev@wevio.fr
             </a>
           </div>
         </div>

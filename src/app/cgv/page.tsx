@@ -26,7 +26,7 @@ export default function CgvPage() {
         <p>
           Wevio est une marque commerciale de <strong>Fidyk Hugo</strong>,
           auto-entrepreneur, SIREN 942 782 301, 60 rue François 1er – 75008 Paris —{" "}
-          <a href="mailto:contact@wevio.fr">contact@wevio.fr</a>.
+          <a href="mailto:hugodev@wevio.fr">hugodev@wevio.fr</a>.
         </p>
       </section>
 

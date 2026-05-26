@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Btn } from "@/components/ui/Btn";
+import { HeroDashboardMockup } from "@/components/home/HeroDashboardMockup";
 
 const words = ["Sites", "web", "&", "apps", "métier", "sur-mesure"];
 
@@ -118,28 +119,7 @@ export function Hero() {
           className="relative hidden min-[480px]:block"
           style={{ transformStyle: "preserve-3d", perspective: 1000 }}
         >
-          <div className="rounded-card border border-[var(--border)] bg-surf p-4 shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
-            <div className="mb-3 flex items-center gap-2 border-b border-[var(--border)] pb-3">
-              <span className="h-3 w-3 rounded-full bg-red-500/70" />
-              <span className="h-3 w-3 rounded-full bg-yellow-500/70" />
-              <span className="h-3 w-3 rounded-full bg-green-500/70" />
-              <span className="ml-auto text-xs text-dim">NexoCRM — Dashboard</span>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              <div className="col-span-2 space-y-2">
-                <div className="h-24 rounded-lg bg-blue/20" />
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="h-16 rounded-lg bg-white/5" />
-                  <div className="h-16 rounded-lg bg-white/5" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="h-8 rounded-lg bg-white/5" />
-                ))}
-              </div>
-            </div>
-          </div>
+          <HeroDashboardMockup />
         </div>
       </div>
     </section>

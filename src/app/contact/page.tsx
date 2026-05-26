@@ -97,13 +97,15 @@ export default function ContactPage() {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted">
                 <Mail size={18} className="text-blue" />
-                <a href="mailto:contact@wevio.fr" className="hover:text-white">
-                  contact@wevio.fr
+                <a href="mailto:hugodev@wevio.fr" className="hover:text-white">
+                  hugodev@wevio.fr
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted">
                 <Phone size={18} className="text-blue" />
-                +33 1 23 45 67 89
+                <a href="tel:+33652570760" className="hover:text-white">
+                  06 52 57 07 60
+                </a>
               </li>
             </ul>
           </div>
